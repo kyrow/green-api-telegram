@@ -2,6 +2,9 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* Тёмной темы нет: dark:-варианты shadcn включаются только классом .dark, а не системной настройкой. */
+@custom-variant dark (&:is(.dark *));
+
 /*
  * Тема Telegram Web K (светлая). Значения сняты с web.telegram.org/k:
  * --message-out-background-color, --primary-color, --secondary-text-color,
